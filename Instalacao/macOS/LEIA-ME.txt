@@ -1,0 +1,56 @@
+============================================================
+  RSI SNIPER PRO - Scripts para macOS
+============================================================
+
+Esta pasta contém dois aplicativos:
+
+
+1. Instalar_RSI_Sniper.app
+------------------------------------------------------------
+   O QUE FAZ:
+   - Procura automaticamente a pasta do MetaTrader 5 (Wine)
+   - Copia os arquivos do RSI Sniper para as pastas corretas
+   - Cria um atalho na Area de Trabalho para abrir o painel
+
+   QUANDO USAR:
+   - Execute apenas uma vez, na primeira instalacao
+   - Execute novamente se quiser atualizar os arquivos
+
+   NOTA: Se aparecer aviso de seguranca, va em:
+   Preferencias do Sistema > Privacidade e Seguranca > Abrir Mesmo Assim
+
+
+2. Abrir_Painel.app
+------------------------------------------------------------
+   O QUE FAZ:
+   - Localiza o painel instalado no MetaTrader 5
+   - Abre o Painel de Controle do RSI Sniper
+   - Instala automaticamente dependencias se necessario
+
+   QUANDO USAR:
+   - Sempre que quiser abrir o painel de controle
+   - Use o atalho criado na Area de Trabalho (mais pratico)
+
+
+============================================================
+  ORDEM DE EXECUCAO
+============================================================
+
+   1. Execute: Instalar_RSI_Sniper.app
+   2. Compile o EA no MetaEditor (F7)
+   3. Execute: Abrir_Painel.app (ou use o atalho no Desktop)
+
+
+============================================================
+  REQUISITOS
+============================================================
+
+   - Python 3.8 ou superior (via Homebrew recomendado)
+   - MetaTrader 5 instalado via Wine/CrossOver
+   - CustomTkinter (instalado automaticamente)
+
+   Para instalar Python no macOS:
+   brew install python3
+
+
+============================================================
